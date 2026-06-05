@@ -1,0 +1,20 @@
+export const project = {
+  name: "RemitStudy Vault",
+  oldName: "Remittance-Linked Student Loan",
+  slug: "remitstudy-vault",
+  track: "Track 1 Remittance & Cross-Border",
+  oneLine: "A remittance-linked education loan vault that converts family support into transparent tuition escrow and repayment records.",
+  users: "OFW families, students, schools, and scholarship lenders",
+  approach: "Remittance-to-tuition escrow",
+  integration: "SEP-24 and anchor rails are documented as the future cash-in/cash-out path, while testnet uses XLM SAC settlement.",
+  contractId: process.env.NEXT_PUBLIC_CONTRACT_ID || "CBUBYSLWJDFUR2JVKJBUSNWYTEJO6WBIQY4BKPCXVPVLCNW4CVSBNKEK",
+  rpcUrl: process.env.NEXT_PUBLIC_SOROBAN_RPC || "https://soroban-testnet.stellar.org",
+  horizonUrl: process.env.NEXT_PUBLIC_HORIZON_URL || "https://horizon-testnet.stellar.org",
+  network: "testnet",
+  functions: {
+    create: "open_student_vault",
+    fund: "fund_tuition_escrow",
+    attest: "mark_school_progress",
+    release: "release_tuition",
+  },
+};
